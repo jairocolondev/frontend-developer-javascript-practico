@@ -8,7 +8,7 @@ const cardsContainer = document.querySelector('.cards-container');
 menuEmail.addEventListener('click', toggleDesktopMenu);
 
 function toggleDesktopMenu() {
-	asideCart.classList.add('inactive');
+	shoppingCartContainer.classList.add('inactive');
 	desktopMenu.classList.toggle('inactive');
 }
 
@@ -19,20 +19,20 @@ const mobileMenu = document.querySelector('.mobile-menu');
 hamMenu.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu() {
-	asideCart.classList.add('inactive');
+	shoppingCartContainer.classList.add('inactive');
 	mobileMenu.classList.toggle('inactive');
 }
 
 // Fusión Menú Cart con la navBar-Hamburguesa
 const menuCart = document.querySelector('.navbar-shopping-cart');
-const asideCart = document.querySelector('.product-detail');
+const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 
 menuCart.addEventListener('click', toggleCartMenuAside);
 
 function toggleCartMenuAside() {
 	desktopMenu.classList.add('inactive');
 	mobileMenu.classList.add('inactive');
-	asideCart.classList.toggle('inactive');
+	shoppingCartContainer.classList.toggle('inactive');
 }
 
 //Lista de Productos
